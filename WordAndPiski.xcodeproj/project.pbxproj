@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000012 /* WordAndPiskiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000011 /* WordAndPiskiApp.swift */; };
+		000000000000000000000014 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000013 /* RootView.swift */; };
+		000000000000000000000016 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000015 /* Theme.swift */; };
+		000000000000000000000018 /* Prefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000017 /* Prefs.swift */; };
+		00000000000000000000001A /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000019 /* SoundPlayer.swift */; };
+		00000000000000000000001C /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001B /* MainScreen.swift */; };
+		00000000000000000000001E /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001D /* Screens.swift */; };
+		000000000000000000000020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001F /* Assets.xcassets */; };
+		000000000000000000000022 /* snd_burp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000021 /* snd_burp.mp3 */; };
+		000000000000000000000024 /* snd_doorbell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000023 /* snd_doorbell.mp3 */; };
+		000000000000000000000026 /* snd_meow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000025 /* snd_meow.mp3 */; };
+		000000000000000000000028 /* snd_press.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000027 /* snd_press.mp3 */; };
+		00000000000000000000002A /* snd_save.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000029 /* snd_save.mp3 */; };
+		00000000000000000000002C /* snd_settings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002B /* snd_settings.mp3 */; };
+		00000000000000000000002E /* snd_sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002D /* snd_sound1.mp3 */; };
+		000000000000000000000030 /* snd_sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002F /* snd_sound2.mp3 */; };
+		000000000000000000000032 /* snd_sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000031 /* snd_sound3.mp3 */; };
+		000000000000000000000034 /* snd_windows_error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000033 /* snd_windows_error.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000011 /* WordAndPiskiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordAndPiskiApp.swift; sourceTree = "<group>"; };
+		000000000000000000000013 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		000000000000000000000015 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		000000000000000000000017 /* Prefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefs.swift; sourceTree = "<group>"; };
+		000000000000000000000019 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		00000000000000000000001B /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		00000000000000000000001D /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
+		00000000000000000000001F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000000000000000000000021 /* snd_burp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_burp.mp3; sourceTree = "<group>"; };
+		000000000000000000000023 /* snd_doorbell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_doorbell.mp3; sourceTree = "<group>"; };
+		000000000000000000000025 /* snd_meow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_meow.mp3; sourceTree = "<group>"; };
+		000000000000000000000027 /* snd_press.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_press.mp3; sourceTree = "<group>"; };
+		000000000000000000000029 /* snd_save.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_save.mp3; sourceTree = "<group>"; };
+		00000000000000000000002B /* snd_settings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_settings.mp3; sourceTree = "<group>"; };
+		00000000000000000000002D /* snd_sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_sound1.mp3; sourceTree = "<group>"; };
+		00000000000000000000002F /* snd_sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_sound2.mp3; sourceTree = "<group>"; };
+		000000000000000000000031 /* snd_sound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_sound3.mp3; sourceTree = "<group>"; };
+		000000000000000000000033 /* snd_windows_error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snd_windows_error.mp3; sourceTree = "<group>"; };
+		000000000000000000000003 /* WordAndPiski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordAndPiski.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000005 /* WordAndPiski */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000011 /* WordAndPiskiApp.swift */,
+				000000000000000000000013 /* RootView.swift */,
+				000000000000000000000015 /* Theme.swift */,
+				000000000000000000000017 /* Prefs.swift */,
+				000000000000000000000019 /* SoundPlayer.swift */,
+				00000000000000000000001B /* MainScreen.swift */,
+				00000000000000000000001D /* Screens.swift */,
+				00000000000000000000001F /* Assets.xcassets */,
+				000000000000000000000006 /* Sounds */,
+			);
+			path = WordAndPiski;
+			sourceTree = "<group>";
+		};
+		000000000000000000000006 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000021 /* snd_burp.mp3 */,
+				000000000000000000000023 /* snd_doorbell.mp3 */,
+				000000000000000000000025 /* snd_meow.mp3 */,
+				000000000000000000000027 /* snd_press.mp3 */,
+				000000000000000000000029 /* snd_save.mp3 */,
+				00000000000000000000002B /* snd_settings.mp3 */,
+				00000000000000000000002D /* snd_sound1.mp3 */,
+				00000000000000000000002F /* snd_sound2.mp3 */,
+				000000000000000000000031 /* snd_sound3.mp3 */,
+				000000000000000000000033 /* snd_windows_error.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000005 /* WordAndPiski */,
+				000000000000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000003 /* WordAndPiski.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000002 /* WordAndPiski */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000000C /* Build configuration list for PBXNativeTarget "WordAndPiski" */;
+			buildPhases = (
+				000000000000000000000008 /* Sources */,
+				000000000000000000000009 /* Frameworks */,
+				00000000000000000000000A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordAndPiski;
+			productName = WordAndPiski;
+			productReference = 000000000000000000000003 /* WordAndPiski.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					000000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 00000000000000000000000B /* Build configuration list for PBXProject "WordAndPiski" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000004;
+			productRefGroup = 000000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000002 /* WordAndPiski */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00000000000000000000000A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000020 /* Assets.xcassets in Resources */,
+				000000000000000000000022 /* snd_burp.mp3 in Resources */,
+				000000000000000000000024 /* snd_doorbell.mp3 in Resources */,
+				000000000000000000000026 /* snd_meow.mp3 in Resources */,
+				000000000000000000000028 /* snd_press.mp3 in Resources */,
+				00000000000000000000002A /* snd_save.mp3 in Resources */,
+				00000000000000000000002C /* snd_settings.mp3 in Resources */,
+				00000000000000000000002E /* snd_sound1.mp3 in Resources */,
+				000000000000000000000030 /* snd_sound2.mp3 in Resources */,
+				000000000000000000000032 /* snd_sound3.mp3 in Resources */,
+				000000000000000000000034 /* snd_windows_error.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000012 /* WordAndPiskiApp.swift in Sources */,
+				000000000000000000000014 /* RootView.swift in Sources */,
+				000000000000000000000016 /* Theme.swift in Sources */,
+				000000000000000000000018 /* Prefs.swift in Sources */,
+				00000000000000000000001A /* SoundPlayer.swift in Sources */,
+				00000000000000000000001C /* MainScreen.swift in Sources */,
+				00000000000000000000001E /* Screens.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00000000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			COPY_PHASE_STRIP = NO;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_NO_COMMON_BLOCKS = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			SDKROOT = iphoneos;
+			SWIFT_VERSION = 5.0;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_TESTABILITY = YES;
+			GCC_OPTIMIZATION_LEVEL = 0;
+			GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+			MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+			ONLY_ACTIVE_ARCH = YES;
+			SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			};
+			name = Debug;
+		};
+		00000000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			COPY_PHASE_STRIP = NO;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_NO_COMMON_BLOCKS = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			SDKROOT = iphoneos;
+			SWIFT_VERSION = 5.0;
+			DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
+			ENABLE_NS_ASSERTIONS = NO;
+			MTL_ENABLE_DEBUG_INFO = NO;
+			SWIFT_COMPILATION_MODE = wholemodule;
+			VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00000000000000000000000F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 467;
+			DEVELOPMENT_TEAM = "";
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = word_and_piski;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+			MARKETING_VERSION = 4.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.example.wordandpiski;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+			ENABLE_PREVIEWS = YES;
+			};
+			name = Debug;
+		};
+		000000000000000000000010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 467;
+			DEVELOPMENT_TEAM = "";
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = word_and_piski;
+			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+			MARKETING_VERSION = 4.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.example.wordandpiski;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = "1,2";
+			ENABLE_PREVIEWS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00000000000000000000000B /* Build configuration list for PBXProject "WordAndPiski" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000D /* Debug */,
+				00000000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000000C /* Build configuration list for PBXNativeTarget "WordAndPiski" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000F /* Debug */,
+				000000000000000000000010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
