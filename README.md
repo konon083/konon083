@@ -13,14 +13,14 @@
 
 ## Сборка
 
-Собрать `.ipa` можно только на macOS с Xcode 15+:
+Собрать `.ipa` можно только на macOS с Xcode 13+:
 
 1. Откройте `WordAndPiski.xcodeproj` в Xcode.
 2. Выберите target **WordAndPiski** → Signing & Capabilities → укажите свой **Team**.
 3. Выберите simulator или своё устройство и нажмите **⌘R**.
 4. Для `.ipa`: Product → Archive → Distribute App.
 
-Минимальная версия iOS: **16.0** (используется `NavigationStack`).
+Минимальная версия iOS: **15.0** (навигация через `NavigationView`, без `NavigationStack`).
 Bundle ID: `com.example.wordandpiski`, версия `4.0` (467).
 
 ## Отличия от Android-версии
