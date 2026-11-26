@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-enum Route: Hashable {
+enum Route {
     case main
     case notepad
     case cats
@@ -10,25 +10,40 @@ enum Route: Hashable {
     case settings
 }
 
+/// Навигация через NavigationView: совместима с iOS 15.
+/// NavigationStack доступен только с iOS 16, поэтому здесь state + NavigationLink.
 struct RootView: View {
-    @State private var path: [Route] = []
+    @State private var selection: Route? = nil
 
     var body: some View {
-        NavigationStack(path: $path) {
+        NavigationView {
             MainScreen { route in
-                path.append(route)
+                selection = route
             }
-            .navigationDestination(for: Route.self) { route in
-                destination(for: route)
-            }
+            .background(
+                NavigationLink(
+                    destination: destination(for: selection ?? .main),
+                    isActive: Binding(
+                        get: { selection != nil },
+                        set: { active in
+                            if !active { selection = nil }
+                        }
+                    )
+                ) {
+                    EmptyView()
+                }
+                .frame(width: 0, height: 0)
+                .opacity(0)
+            )
         }
+        .navigationViewStyle(.stack)
     }
 
     @ViewBuilder
     private func destination(for route: Route) -> some View {
         switch route {
         case .main:
-            MainScreen { path.append($0) }
+            MainScreen { selection = $0 }
         case .notepad:
             NotepadScreen()
         case .cats:
