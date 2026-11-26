@@ -37,33 +37,33 @@ struct MainScreen: View {
 
                         Spacer().frame(height: 12)
 
-                        MenuButton("БЛОКНОТ", systemImage: "square.and.pencil",
+                        MenuButton(title: "БЛОКНОТ", systemImage: "square.and.pencil",
                                    container: palette.primaryContainer,
                                    content: palette.onPrimaryContainer) {
                             onNavigate(.notepad)
                         }
-                        MenuButton("ПОТОМ!!!", systemImage: "exclamationmark.triangle.fill",
+                        MenuButton(title: "ПОТОМ!!!", systemImage: "exclamationmark.triangle.fill",
                                    container: palette.tertiaryContainer,
                                    content: palette.onTertiaryContainer) {
                             sound.play(.sndWindowsError)
                         }
-                        MenuButton("КОТИКИ", systemImage: "heart.fill",
+                        MenuButton(title: "КОТИКИ", systemImage: "heart.fill",
                                    container: palette.secondaryContainer,
                                    content: palette.onSecondaryContainer) {
                             onNavigate(.cats)
                         }
-                        MenuButton("ЗВУКИ!", systemImage: "play.fill",
+                        MenuButton(title: "ЗВУКИ!", systemImage: "play.fill",
                                    container: palette.surfaceVariant,
                                    content: palette.onSurfaceVariant) {
                             onNavigate(.sounds)
                         }
-                        MenuButton("НАСТРОЙКИ", systemImage: "gearshape.fill",
+                        MenuButton(title: "НАСТРОЙКИ", systemImage: "gearshape.fill",
                                    container: palette.primaryContainer,
                                    content: palette.onPrimaryContainer) {
                             sound.play(.sndSettings)
                             onNavigate(.settings)
                         }
-                        MenuButton("О ПРИЛОЖЕНИИ", systemImage: "info.circle.fill",
+                        MenuButton(title: "О ПРИЛОЖЕНИИ", systemImage: "info.circle.fill",
                                    container: palette.secondaryContainer,
                                    content: palette.onSecondaryContainer) {
                             onNavigate(.about)
