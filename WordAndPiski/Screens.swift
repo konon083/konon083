@@ -51,7 +51,7 @@ struct NotepadScreen: View {
                     sound.play(.sndSave)
                 } label: {
                     Label("СОХРАНИТЬ", systemImage: "checkmark")
-                        .fontWeight(.bold)
+                        .font(.system(size: 17, weight: .bold))
                 }
                 .buttonStyle(.borderedProminent)
                 .padding()
