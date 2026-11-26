@@ -212,7 +212,7 @@
 			ENABLE_STRICT_OBJC_MSGSEND = YES;
 			GCC_C_LANGUAGE_STANDARD = gnu17;
 			GCC_NO_COMMON_BLOCKS = YES;
-			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 			SDKROOT = iphoneos;
 			SWIFT_VERSION = 5.0;
 			DEBUG_INFORMATION_FORMAT = dwarf;
@@ -236,7 +236,7 @@
 			ENABLE_STRICT_OBJC_MSGSEND = YES;
 			GCC_C_LANGUAGE_STANDARD = gnu17;
 			GCC_NO_COMMON_BLOCKS = YES;
-			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 			SDKROOT = iphoneos;
 			SWIFT_VERSION = 5.0;
 			DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
@@ -259,7 +259,7 @@
 			INFOPLIST_KEY_CFBundleDisplayName = word_and_piski;
 			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 			LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
 			MARKETING_VERSION = 4.0;
 			PRODUCT_BUNDLE_IDENTIFIER = com.example.wordandpiski;
@@ -283,7 +283,7 @@
 			INFOPLIST_KEY_CFBundleDisplayName = word_and_piski;
 			INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-			IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+			IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 			LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
 			MARKETING_VERSION = 4.0;
 			PRODUCT_BUNDLE_IDENTIFIER = com.example.wordandpiski;
