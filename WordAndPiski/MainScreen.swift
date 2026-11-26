@@ -14,8 +14,6 @@ struct MainScreen: View {
             Image(prefs.altWallpaper ? "bg_alt" : "bg_main")
                 .resizable()
                 .scaledToFill()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .clipped()
                 .ignoresSafeArea()
 
             // Затемнение, чтобы текст и кнопки читались на любой картинке.
@@ -28,14 +26,13 @@ struct MainScreen: View {
 
             GeometryReader { geo in
                 ScrollView {
-                    VStack(spacing: 12) {
+                    VStack(spacing: 10) {
                         Text("ДОБРО ПОЖАЛОВАТЬ!!!")
                             .font(.title2)
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .foregroundStyle(.white)
-
-                        Spacer().frame(height: 12)
+                            .padding(.top, 4)
 
                         MenuButton(title: "БЛОКНОТ", systemImage: "square.and.pencil",
                                    container: palette.primaryContainer,
@@ -72,21 +69,31 @@ struct MainScreen: View {
                         Button {
                             sound.play(.sndPress)
                         } label: {
-                            Label {
-                                Text("НАЖМИ!!!").fontWeight(.bold)
-                            } icon: {
+                            HStack(spacing: 10) {
                                 Image(systemName: "hand.thumbsup.fill")
+                                    .frame(width: 24)
+                                Text("НАЖМИ!!!")
+                                    .font(.headline)
+                                    .fontWeight(.bold)
+                                    .lineLimit(1)
+                                    .minimumScaleFactor(0.75)
+                                Spacer(minLength: 0)
                             }
-                            .frame(maxWidth: .infinity, minHeight: 56)
+                            .padding(.horizontal, 14)
+                            .frame(height: 52)
+                            .frame(maxWidth: .infinity)
+                            .background(palette.primary)
+                            .foregroundStyle(palette.onPrimary)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
                         }
-                        .buttonStyle(.borderedProminent)
-                        .tint(palette.primary)
-                        .foregroundStyle(palette.onPrimary)
+                        .buttonStyle(.plain)
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 16)
-                    .frame(maxWidth: .infinity, minHeight: geo.size.height)
+                    // На iOS 15 maxWidth: .infinity внутри ScrollView может дать
+                    // контент шире экрана. Задаём ширину явно.
+                    .frame(width: max(0, geo.size.width - 32))
+                    .padding(.vertical, 12)
                 }
+                .frame(width: geo.size.width, height: geo.size.height)
             }
         }
     }
@@ -101,15 +108,19 @@ private struct MenuButton: View {
 
     var body: some View {
         Button(action: action) {
-            HStack(spacing: 12) {
+            HStack(spacing: 10) {
                 Image(systemName: systemImage)
+                    .frame(width: 24)
                 Text(title)
                     .font(.headline)
                     .fontWeight(.bold)
-                Spacer()
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.75)
+                Spacer(minLength: 0)
             }
-            .padding(.horizontal, 16)
-            .frame(maxWidth: .infinity, minHeight: 56, alignment: .leading)
+            .padding(.horizontal, 14)
+            .frame(height: 52)
+            .frame(maxWidth: .infinity)
             .background(container.opacity(0.95))
             .foregroundStyle(content)
             .clipShape(RoundedRectangle(cornerRadius: 20))
